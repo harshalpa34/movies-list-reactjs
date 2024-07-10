@@ -1,0 +1,68 @@
+.movie-card {
+  width: 180px;
+  height: auto;
+  background-color: rgba(232, 222, 222, 0.795);
+  transition: 0.2s;
+  cursor: pointer;
+  border-radius: 5px;
+  overflow: hidden;
+  max-height: 310px;
+  .img-wrapper {
+    width: 100%;
+    position: relative;
+    img {
+      width: 100%;
+      aspect-ratio: 3 / 3.5;
+      object-fit: cover;
+    }
+    .watchlist-icon {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 5px;
+      svg {
+        color: white;
+      }
+    }
+  }
+
+  .footer {
+    padding: 5px;
+    .title {
+      margin: 2px auto;
+      padding: 0;
+      font-family: Montserrat;
+      color: rgba(14, 13, 13, 0.943);
+      white-space: noWrap;
+      overflow: hidden;
+      width: 100%;
+      text-overflow: ellipsis;
+      font-size: 1.1rem;
+    }
+    p {
+      margin: 2px auto;
+      padding: 0;
+      font-family: Poppins;
+      font-size: 0.9rem;
+    }
+    .release-date {
+      opacity: 0.9;
+    }
+    .rating {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      opacity: 0.8;
+      font-size: 0.8rem;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 10px rgba(44, 40, 40, 0.445);
+  }
+}

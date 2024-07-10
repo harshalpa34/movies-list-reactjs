@@ -1,0 +1,102 @@
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  max-width: 250px;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid black;
+  box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.2);
+
+  .top {
+    width: 90%;
+    flex: 1;
+    h2 {
+      margin-top: 50px;
+      text-align: center;
+      font-size: 2rem;
+      font-family: Montserrat;
+      color: rgba(210, 26, 26, 0.9);
+      font-weight: 800;
+    }
+    .search-bar-wrapper {
+      padding: 3px 1rem;
+      height: 30px;
+      border: 0.5px solid #6d5a5a;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      input {
+        background: transparent;
+        outline: none;
+        border: none;
+        height: 100%;
+        width: 100%;
+        font-family: Poppins;
+        font-size: 1rem;
+      }
+      .search-icon {
+        color: #6d5a5a;
+      }
+    }
+
+    .navigation-tab {
+      transition: 0.2s;
+      margin: 10px auto;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      font-family: Poppins;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: Pointer;
+      color: black;
+      text-decoration: none;
+      &.active,
+      &:hover {
+        background-color: rgba(210, 26, 26, 0.9);
+        color: white;
+        .navigation-icon {
+          color: white;
+        }
+      }
+    }
+  }
+  .bottom {
+    width: 90%;
+    margin: 20px auto;
+    .user-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      border: 1px solid black;
+      border-radius: 10px;
+      padding-right: 20px;
+      cursor: pointer;
+      svg {
+        width: 1rem;
+      }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background: #7e7777;
+  margin: 10px auto;
+}
